@@ -13,6 +13,10 @@ function myFunction() {
     if (seconds < 60) {
         time.innerHTML = "00:" + seconds;
     }
+      if (seconds < 10) {
+        time.innerHTML = "00:0" + seconds;
+    }
+    
     if (seconds >= 0) {
         seconds--;
         if (seconds < 0) {
