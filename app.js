@@ -9,18 +9,9 @@ let time = document.getElementById("timer");
 var seconds = 60;
 var timer;
 
-// document.addEventListener("keyup", function(e) {
-//     if (e.keyCode == 32) {
-//         counter += 1;
-//         sCounter.innerHTML = counter;
-//     }
-// })
-
-
-
 function myFunction() {
     if (seconds < 60) {
-        time.innerHTML = seconds;
+        time.innerHTML = "00:" + seconds;
     }
     if (seconds >= 0) {
         seconds--;
@@ -33,17 +24,6 @@ function myFunction() {
 }
 
 
-
-// btn.onclick = () => {
-//     btnPressed = true;
-//     console.log(btnPressed);
-
-//     if (!timer) {
-//         timer = window.setInterval(function() {
-//             myFunction();
-//         }, 1000); // every second
-//     }
-// }
 
 
 btn.onclick = () => {
@@ -70,8 +50,4 @@ btn.onclick = () => {
 }
 
 
-
-
-
-
-document.getElementById("timer").innerHTML = "1:00";
+document.getElementById("timer").innerHTML = "01:00";
