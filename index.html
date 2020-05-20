@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPACEBAR Game</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
 <body>
-    <h1>SPACEBAR 400</h1>
-    <h3>Press the Spacebar 400 times under a minute to win the game</h3>
-    <h4>Note: Doesn't work in mobile</h4>
+    <div class="container">
+        <h1>SPACEBAR 400</h1>
+        <h3>Can you press the Spacebar 400 times under a minute? </h3>
 
-    <table border="2">
-        <tr>
-            <td><button id="btnStart">START GAME</button></td>
-            <td><span id='count'></span></td>
-            <td> <span id="timer"></span></td>
-        </tr>
+        <table>
+            <tr>
+                <td><button id="btnStart">START GAME</button></td>
+                <td><span id='count'>Press Spacebar</span></td>
+                <td> <span id="timer"></span></td>
+                <td><button id="btnReset">RESET GAME</button></td>
+            </tr>
+        </table>
 
-    </table>
+        <div class="resultInfo">
+            <span id="result"></span> <span id="info"></span>
+        </div>
+
+        <h5>Instruction: Press 'Start Game' and start pressing Spacebar.
+            <br/> <br/>Note: Mobile is not supported.</h5>
+
+        <p class="copyright"> &#9400;
+            <span id="fullYear"></span> Abim Sedhain
+        </p>
+    </div>
 
     <script src="app.js"></script>
 </body>
